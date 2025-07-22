@@ -5,16 +5,13 @@
     gap: 35px;
 }
 
-.hero img {
-    margin-top: 150px;
-    ;
-}
 
 .hero h1 {
     text-align: center;
     width: 70%;
     font-size: 90px;
     font-weight: 600;
+    margin-top: 0.5em;
 }
 
 .hero h1 span {
