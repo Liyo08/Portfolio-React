@@ -41,6 +41,7 @@
     gap: 20px;
     font-size: 24px;
     font-weight: 500;
+    margin-bottom:4em;
 }
 
 .about-skills {
@@ -57,7 +58,7 @@
 }
 
 .about-skill p {
-
+    min-width: 170px;
     font-size: 24px;
     font-weight: 500;
 }
