@@ -1,0 +1,38 @@
+.my-certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.my-certificates-title {
+    position: relative;
+}
+
+.my-certificates-title h1 {
+    font-size: 80px;
+    padding: 0px 30px;
+    font-weight: 600;
+}
+
+.my-certificates-container {
+   display:grid;
+   gap:40px;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.my-certificates-container img {
+    width: 419px;
+    height: 280%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.my-certificates-container img:hover {
+    transform: scale(1.10);
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 4px solid #ff00ff;
+   
+}
