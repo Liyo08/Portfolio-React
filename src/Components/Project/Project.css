@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 82px 170px;
 }
 
 .project-title {
@@ -79,4 +79,12 @@
     border:2px solid violet;
     background-image: linear-gradient(45deg,#14000c,#00161f);
     transition: 0.4s;
+}
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr; /* single column on small screens */
+    }
+    .project-format {
+        padding: 70px; /* adjust padding for smaller screens */
+    }
 }

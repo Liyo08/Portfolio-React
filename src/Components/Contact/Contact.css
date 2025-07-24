@@ -114,3 +114,18 @@
     transform: scale(1.1);
     transition: 0.5s;
 }
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-right input, .contact-right textarea {
+        width: 90%;
+    }
+}
