@@ -5,7 +5,7 @@ import Project_data from '../../assets/project_data';
 
 const Project = () => {
   return (
-    <div className='project'>
+    <div className='project' id='project'>
         <div className="project-title">
             <h1>My Projects</h1>
             <img src="" alt="" />

@@ -4,7 +4,16 @@
     gap:30px;
     margin:50px 170px;
 }
+.footer-title {
+    position: relative;
+    padding-left: 350px;
+}
 
+.footer-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
 .footer-top{
     display: flex;
     justify-content: space-between;

@@ -3,11 +3,14 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer' id='footer'>
+            <div className="footer-title">
+                <h1>Subscribe.</h1>
+                </div>
             <div className="footer-top">
                 <div className="footer-top-left">
                     <img src="" alt="" />
-                    <p>I am a frontend developer passionate about turning ideas into seamless digital experiences</p>
+                    <p>I am a frontend developer passionate about turning ideas into  digital experiences Ernakulam, Kerala</p>
                 </div>
                 <div className="footer-top-right">
                     <div className="footer-email-input">

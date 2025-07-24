@@ -24,3 +24,8 @@
 .nav-connect:hover{
     transform: scale(1.05);
 }
+
+.anchorlink{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
