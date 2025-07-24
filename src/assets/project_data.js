@@ -26,7 +26,7 @@ const Project_data=[
 },
 {
     s_no:"6",
-    s_name:"Student currency: ",
+    s_name:"Student currency ",
     s_desc:"A special currency for students that parents can manage, and learning financial discipline",
 }
 
