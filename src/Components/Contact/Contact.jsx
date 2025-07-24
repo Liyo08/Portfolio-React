@@ -2,6 +2,30 @@ import React from 'react'
 import './Contact.css'
 
 const Contact = () => {
+    const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "4d69328e-d46b-4122-9a59-8dd08e263e2b");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      alert("Message sent successfully!");
+      event.target.reset();
+    }
+  };
   return (
     <div className='contact' id='contact'>
         <div className="contact-title">
@@ -20,14 +44,14 @@ const Contact = () => {
                   
                 </div>
             </div>
-            <form  className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right">
                 <label htmlFor="">Your Name</label>
                 <input type="text" placeholder='Enter your name' name='name' />
                 <label htmlFor="">Your Email</label>
                 <input type="email" placeholder='Enter your email' name='email' />
                 <label htmlFor="">Your Message</label>
                 <textarea name="message"  rows="8" placeholder='Enter your message'></textarea>
-                <button type='submit' className="contact-submit">Submit now</button>
+                <button  type='submit' className="contact-submit">Submit now</button>
             </form>
             
         </div>
