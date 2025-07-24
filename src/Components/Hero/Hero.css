@@ -65,3 +65,28 @@
     border: 2px solid #B415FF;
 
 }
+
+@media (max-width: 768px) {
+/*.hero img{
+        margin-top:120px;
+        width: 260px;
+        height: auto;
+    }*/
+    .hero h1 {
+        font-size: 50px;
+        width: 90%;
+    }
+
+    .hero p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .hero-action {
+        gap: 16px;
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom:80px;
+        
+    }
+}
