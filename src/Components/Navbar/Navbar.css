@@ -11,6 +11,8 @@
     align-items:center;
     gap: 60px;
     font-size: 20px;
+    margin-left: 300px;
+    margin-right:20px;
 }
 
 .nav-connect{
@@ -28,4 +30,41 @@
 .anchorlink{
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+.toggle-btn {
+    display: none; /* hidden by default */
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block; /* visible only on small screens */
+         position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .navmenu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #161513c2;
+        width:100%;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+        margin-right: 10px;
+        display: none; /* hidden by default on small screens */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .navmenu.open {
+        display: flex; /* show when toggled */
+         margin-right: 10px;
+    }
+
+    .nav-connect {
+        display: none; /* hide connect button on small screens */
+    }
 }
