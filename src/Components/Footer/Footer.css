@@ -81,3 +81,40 @@
 .footer-email-input:hover{
     border:2px solid white;
 }
+
+@media (max-width: 768px) {
+    .footer{
+        margin: 50px 20px;
+          font-size: 20px;
+    }
+    .footer-title {
+        font-size: 20px;
+        padding-left:3px;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top-left p {
+        text-align: center;
+        font-size: 18px;;
+        margin-bottom:10px;
+    }
+    .footer-top-right {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-email-input {
+        width: 100%;
+        padding-right: 30px;
+    }
+    .footer-bottom-right{
+        font-size: 18px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+}
