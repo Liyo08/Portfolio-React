@@ -58,6 +58,10 @@
     cursor: pointer;
     border: 2px solid #ffffff;
 }
+.hero a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .hero-resume:hover {
     transform: scale(1.03);
