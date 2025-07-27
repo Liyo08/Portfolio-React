@@ -14,8 +14,9 @@ const About = () => {
                 </div>
                 <div className="right-section">
                     <div className="about-para">
-                        <p>I’m a frontend developer and quick learner who enjoys solving problems and bringing designs to life with clean, responsive code</p>
-                        <p>I love exploring new technologies and have gained hands-on experience through building real-world projects</p>
+                        <p>I'm passionate about crafting clean, responsive user interfaces and bringing designs to life with precision and care. A quick learner and natural problem-solver, I enjoy turning ideas into real-world web experiences. I love exploring new technologies and continuously build hands-on expertise through personal and collaborative projects
+
+                        </p>
                     </div>
                     <div className="about-skills">
                         <div className="about-skill"><p>HTML, CSS & JS</p><hr style={{ width: "80%" }} /></div>
