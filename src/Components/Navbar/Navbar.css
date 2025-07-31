@@ -20,7 +20,7 @@
     border-radius: 50px;
     font-size: 15px;
     cursor: pointer;
-    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%);
+    background: linear-gradient(270deg, #00FFB2 0.36%, #0061FF 102.06%);
     transition: 0.5s;
 }
 .nav-connect:hover{

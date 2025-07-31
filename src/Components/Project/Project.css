@@ -53,7 +53,8 @@
     margin-top:1em;
     font-size: 38px;
     font-weight: 800;
-   background: linear-gradient(278deg, #df8908 50.41%, #b415ff 90.25%);
+   
+       background: linear-gradient(270deg, #00FFB2 50.41%, #0061FF 90.25%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -76,7 +77,7 @@
 
 .project-format:hover{
     transform: scale(1.05);
-    border:2px solid violet;
+    border:2px solid rgb(0, 251, 255);
     background-image: linear-gradient(45deg,#14000c,#00161f);
     transition: 0.4s;
 }
