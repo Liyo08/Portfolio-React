@@ -7,6 +7,46 @@
     margin: 82px 170px;
 }
 
+.project-format {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.8s ease;
+}
+
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideRight 0.8s ease forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .project-title {
     position: relative;
 }
