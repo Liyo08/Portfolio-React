@@ -75,6 +75,13 @@
     align-items: center;
 }
 
+.project-readmore p {
+    color: #00FFB2;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .project-format:hover{
     transform: scale(1.05);
     border:2px solid rgb(0, 251, 255);
