@@ -17,7 +17,7 @@ const Project = () => {
         <h2>{project.s_name}</h2>
         <p>{project.s_desc}</p>
         <div className="project-readmore">
-            <p>Read more</p>
+            <p>Read </p>
         </div>
     </div>
 })}
