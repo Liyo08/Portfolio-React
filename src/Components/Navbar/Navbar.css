@@ -44,40 +44,59 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+/* Default toggle button: hidden on desktop */
 .toggle-btn {
-    display: none; /* hidden by default */
-    cursor: pointer;
-    margin-right: 20px;
+  display: none; /* Hidden by default */
+  cursor: pointer;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
-    .toggle-btn {
-        display: block; /* visible only on small screens */
-         position: absolute;
-        top: 15px;
-        right: 20px;
-    }
+  .navbar {
+    margin: 0; /* Remove large side margins for mobile */
+    padding: 10px 20px; /* Add smaller padding if needed */
+    position: relative; /* Ensure children with absolute position refer to this */
+  }
 
-    .navmenu {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #161513c2;
-        width:100%;
-        flex-direction: column;
-        gap: 12px;
-        padding: 16px;
-        margin-right: 10px;
-        display: none; /* hidden by default on small screens */
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
+  .toggle-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+  }
 
-    .navmenu.open {
-        display: flex; /* show when toggled */
-         margin-right: 10px;
-    }
+  .navmenu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #161513c2;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    .nav-connect {
-        display: none; /* hide connect button on small screens */
-    }
+  .navmenu.open {
+    display: flex;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+}
+
+
+/* Optional animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
