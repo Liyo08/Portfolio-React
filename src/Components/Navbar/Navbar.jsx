@@ -1,21 +1,26 @@
-import React from 'react'
-import './Navbar.css'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import './Navbar.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Menu, X } from 'lucide-react';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [slideIn, setSlideIn] = useState(false); // 👈 new state
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
-    <div className='navbar'>
-     
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setSlideIn(true);
+    }, 200); // Delay slide-in slightly for a nice entry
 
-      {/* Toggle button visible on small screens */}
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <div className={`navbar ${slideIn ? 'slide-in-navbar' : ''}`}>
       <div className='toggle-btn' onClick={handleToggle}>
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </div>
@@ -35,4 +40,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;

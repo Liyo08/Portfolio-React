@@ -5,6 +5,19 @@
     margin: 20px 170px;
 
 }
+/* Initial hidden position */
+.navbar {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Slide in when the class is added */
+.navbar.slide-in-navbar {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .navmenu{
     display:flex;
     list-style: none;
