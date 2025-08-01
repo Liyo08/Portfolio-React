@@ -27,53 +27,42 @@ const Smart = () => {
 </HashLink>
 
 
-      {/* Project Heading */}
-      <h1 className="project-title"><span>ZenAlign</span> – Your Smart Yoga & Wellness Companion</h1>
+     {/* Project Heading */}
+<h1 className="project-title"><span>Smart Entry</span> – Digitizing Campus Entry <em>(In Development)</em></h1>
 
-      {/* Content Box */}
-      <div className="project-box">
-        <p>
-          <strong>ZenAlign</strong> is an AI-powered web platform designed to assist users in improving yoga posture and wellness.
-          Built as part of our academic journey, this project blends real-time pose feedback with personalized health tools.
-        </p>
+{/* Content Box */}
+<div className="project-box">
+  <p>
+    <strong>College Smart Entry</strong> is a digital visitor entry system designed to modernize the current paper-based approach used in many educational institutions. The goal is to significantly improve administrative response times, enhance data accessibility, and streamline campus security — with early testing already showing a potential 45% improvement in response efficiency.
+  </p>
 
-        <p>
-          <strong>Key Modules:</strong>
-          <ul>
-            <li><strong>ZenSense:</strong> Real-time yoga pose correction via webcam using AI (MediaPipe + PoseNet).</li>
-            <li><strong>ZenFit:</strong> Tutorials with clean visuals and step-by-step pose guidance.</li>
-            <li><strong>ZenTracker:</strong> Tracks time spent in each module with daily reset functionality.</li>
-            <li><strong>Wellness Module:</strong> Includes:
-              <ul>
-                <li>Diet Plans: Goal-specific 7-day rotating plans.</li>
-                <li>Meditation: Calming music, motivational clips, and guided sessions.</li>
-                <li>Yoga Practice: Beginner to advanced levels, plus a Kids section.</li>
-                <li>Sun Salutation: Dedicated Surya Namaskar guidance.</li>
-              </ul>
-            </li>
-            <li><strong>ZenBot:</strong> A chatbot offering yoga support and wellness tips.</li>
-          </ul>
-        </p>
+  <p>
+    Built by a team of classmates and currently in development, this project was inspired by the inefficiencies we observed in our own college, where visitor tracking and attendance were manually recorded on paper. Our system aims to solve this with a digital-first experience that is simple, secure, and scalable.
+  </p>
 
-        <p>
-          This journey involved intense collaboration, problem-solving, and late-night hustle. One highlight was integrating the Wellness Module just before the submission, which elevated the project significantly.
-        </p>
+  <p>
+    <strong>Key Features:</strong>
+    <ul>
+      <li><strong>Digital Visitor Logging:</strong> Real-time digital entry system with unique QR pass generation.</li>
+      <li><strong>Admin Dashboard:</strong> Tracks daily entries, logs timestamps, and raises alerts for unauthorized attempts.</li>
+      <li><strong>Instant Notifications:</strong> Admin and host receive instant alerts upon visitor entry.</li>
+    </ul>
+  </p>
 
-        <p>
-          We proudly presented ZenAlign at our Department Expo and plan to expand it into a mobile app with enhanced personalized features.
-        </p>
+  <p>
+    This project reflects our effort to bridge the gap between outdated processes and efficient digital workflows within campus environments. Once fully implemented, it can help reduce manual workload, prevent unauthorized entries, and enable faster decision-making for staff and administrators.
+  </p>
 
-        <p className="team-credits">
-          Grateful to my incredible teammates <strong>Joel T John</strong>, <strong>Emily Mariam Shaju</strong>, and <strong>Esther Binu</strong> for their dedication, creativity, and energy throughout this project.
-        </p>
+  <p>
+    Platform is being developed using <strong>React</strong> for the frontend, with a supportive backend and database to handle login, visitor data, and session management.
+  </p>
 
-        <div className="tools-used">
-          <h4>🛠️ Tools Used</h4>
-          <p>HTML, CSS, JavaScript, MediaPipe, PoseNet, PHP, MySQL, XAMPP</p>
-        </div>
-        
+  <div className="tools-used">
+    <h4>🛠️ Tools Used</h4>
+    <p>React.js, JavaScript, CSS, MongoDB</p>
+  </div>
+</div>
 
-      </div>
     </div>
   );
 };
