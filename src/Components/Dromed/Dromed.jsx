@@ -26,54 +26,43 @@ const Dromed = () => {
   <button className="back-btn">← Back to Projects</button>
 </HashLink>
 
+{/* Project Heading */}
+<h1 className="project-title"><span>Dromed</span> – Healing Fast Through Drone-Powered Delivery</h1>
 
-      {/* Project Heading */}
-      <h1 className="project-title"><span>ZenAlign</span> – Your Smart Yoga & Wellness Companion</h1>
+{/* Content Box */}
+<div className="project-box">
+  <p>
+    <strong>Dromed</strong> is a visionary healthcare solution that leverages drone technology to ensure the swift and safe delivery of essential medicines — especially to remote or underserved areas. The core objective is to enhance timely access to healthcare by overcoming geographical barriers and delays in traditional logistics.
+  </p>
 
-      {/* Content Box */}
-      <div className="project-box">
-        <p>
-          <strong>ZenAlign</strong> is an AI-powered web platform designed to assist users in improving yoga posture and wellness.
-          Built as part of our academic journey, this project blends real-time pose feedback with personalized health tools.
-        </p>
+  <p>
+    This idea was conceived and developed during our <strong>Industry Leadership Internship</strong>, where our team pitched the concept of drone-powered medical logistics. As part of the presentation, we built a supporting sample website and a concept video to illustrate the use case in real-world scenarios.
+  </p>
 
-        <p>
-          <strong>Key Modules:</strong>
-          <ul>
-            <li><strong>ZenSense:</strong> Real-time yoga pose correction via webcam using AI (MediaPipe + PoseNet).</li>
-            <li><strong>ZenFit:</strong> Tutorials with clean visuals and step-by-step pose guidance.</li>
-            <li><strong>ZenTracker:</strong> Tracks time spent in each module with daily reset functionality.</li>
-            <li><strong>Wellness Module:</strong> Includes:
-              <ul>
-                <li>Diet Plans: Goal-specific 7-day rotating plans.</li>
-                <li>Meditation: Calming music, motivational clips, and guided sessions.</li>
-                <li>Yoga Practice: Beginner to advanced levels, plus a Kids section.</li>
-                <li>Sun Salutation: Dedicated Surya Namaskar guidance.</li>
-              </ul>
-            </li>
-            <li><strong>ZenBot:</strong> A chatbot offering yoga support and wellness tips.</li>
-          </ul>
-        </p>
+  <p>
+    Our efforts were recognized at the final presentation stage, where <strong>Dromed</strong> won the <strong>First Prize</strong> among competing teams. The idea was praised for its practicality, scalability, and potential impact on emergency medicine and rural healthcare delivery.
+  </p>
 
-        <p>
-          This journey involved intense collaboration, problem-solving, and late-night hustle. One highlight was integrating the Wellness Module just before the submission, which elevated the project significantly.
-        </p>
+  <p>
+    <strong>Key Highlights:</strong>
+    <ul>
+      <li>Drone-based real-time medicine delivery model</li>
+      <li>Interactive sample website to simulate user ordering and tracking</li>
+      <li>Pitch deck outlining scalability, regulations, and logistics partnerships</li>
+      <li>Designed for emergency response, rural clinics, and disaster zones</li>
+    </ul>
+  </p>
 
-        <p>
-          We proudly presented ZenAlign at our Department Expo and plan to expand it into a mobile app with enhanced personalized features.
-        </p>
+  <p>
+    This project emphasized the intersection of technology and social impact, pushing us to think beyond code and focus on real-world logistics, user empathy, and innovation.
+  </p>
 
-        <p className="team-credits">
-          Grateful to my incredible teammates <strong>Joel T John</strong>, <strong>Emily Mariam Shaju</strong>, and <strong>Esther Binu</strong> for their dedication, creativity, and energy throughout this project.
-        </p>
+  <div className="tools-used">
+    <h4>🛠️ Tools Used</h4>
+    <p>HTML, CSS, JavaScript, Canva (for pitch design)</p>
+  </div>
+</div>
 
-        <div className="tools-used">
-          <h4>🛠️ Tools Used</h4>
-          <p>HTML, CSS, JavaScript, MediaPipe, PoseNet, PHP, MySQL, XAMPP</p>
-        </div>
-       
-
-      </div>
     </div>
   );
 };
