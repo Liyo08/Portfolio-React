@@ -6,7 +6,7 @@ const Project_data=[
 },
 {
     s_no:"2",
-    s_name:"Agriguru",
+    s_name:"AgriGuru",
     s_desc:"Crop recommendation system using ML based on soil, season & location",
 },
 {
