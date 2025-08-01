@@ -75,43 +75,6 @@
 }
 
 
-.demo-section {
-  max-width: 900px;
-  margin: 40px auto 0;
-  background-color: #1f1e1c;
-  padding: 30px 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 255, 178, 0.2);
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.demo-section h2 {
-  color: #00FFB2;
-  margin-bottom: 15px;
-  font-size: 26px;
-}
-
-.demo-section p {
-  color: #ddd;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.demo-btn {
-  display: inline-block;
-  background: linear-gradient(270deg, #00FFB2 0.36%, #0061FF 102.06%);
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: transform 0.3s ease;
-}
-
-.demo-btn:hover {
-  transform: scale(1.05);
-}
 
 /* Optional fade animation */
 @keyframes pageFadeIn {
@@ -159,6 +122,17 @@
 
   .project-box ul {
     margin-left: 16px;
+  }
+   .tools-used h4 {
+    font-size: 16px;
+  }
+
+  .tools-used p {
+    font-size: 14px;
+  }
+
+  .team-credits {
+    font-size: 14px;
   }
 
 }

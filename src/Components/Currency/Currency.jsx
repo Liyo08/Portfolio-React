@@ -71,21 +71,7 @@ const Currency = () => {
           <h4>🛠️ Tools Used</h4>
           <p>HTML, CSS, JavaScript, MediaPipe, PoseNet, PHP, MySQL, XAMPP</p>
         </div>
-        {/* Demonstration Section */}
-        <div className="demo-section">
-          <h2>🎥 Project Demonstration</h2>
-          <p>
-            Curious to see ZenAlign in action? Watch the working demo of our platform showcasing real-time pose correction, wellness features, and more.
-          </p>
-          <a
-            href="https://drive.google.com/drive/folders/1UG8SYpdRo-OVyF7vbPM7U0btnXRwTYsd" // replace with actual link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="demo-btn"
-          >
-            Watch Demo
-          </a>
-        </div>
+        
 
       </div>
     </div>
