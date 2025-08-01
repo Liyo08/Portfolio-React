@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
     const onSubmit = async (event) => {
@@ -35,14 +36,27 @@ const Contact = () => {
             <div className="contact-left">
                 <h1>Let's Talk</h1>
                 <p>If you have any questions or just want to say hi, feel free to reach out!</p>
-                <div className="contact-details">
-                     <div className="contact-detail"><p>8848162035</p></div>
-                    <div className="contact-detail"><p>liyotom04@gmail.com</p></div>
-                    <div className="contact-detail"><p>www.linkedin.com/in/liyotom</p></div>
-                    <div className="contact-detail"><p>https://github.com/Liyo08</p></div>
-                    
-                  
-                </div>
+              <div className="contact-details">
+  <div className="contact-detail">
+    <FaPhone className="icon" />
+    <p>8848162035</p>
+  </div>
+
+  <div className="contact-detail">
+    <FaEnvelope className="icon" />
+    <p>liyotom04@gmail.com</p>
+  </div>
+
+  <div className="contact-detail">
+    <FaLinkedin className="icon" />
+    <p><a href="https://www.linkedin.com/in/liyotom" target="_blank" rel="noopener noreferrer">linkedin.com/in/liyotom</a></p>
+  </div>
+
+  <div className="contact-detail">
+    <FaGithub className="icon" />
+    <p><a href="https://github.com/Liyo08" target="_blank" rel="noopener noreferrer">github.com/Liyo08</a></p>
+  </div>
+</div>
             </div>
             <form onSubmit={onSubmit} className="contact-right">
                 <label htmlFor="">Your Name</label>

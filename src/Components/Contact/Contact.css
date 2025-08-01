@@ -38,6 +38,26 @@
     -webkit-text-fill-color: transparent;
 
 }
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-detail .icon {
+  font-size: 20px;
+  color: #00FFB2; /* or any color that matches your theme */
+}
+
+.contact-detail a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-detail a:hover {
+  text-decoration: underline;
+}
 
 .contact-left p {
     max-width: 550px;
