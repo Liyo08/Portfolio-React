@@ -22,60 +22,49 @@ const Currency = () => {
   return (
     <div className="project-detail-container">
       {/* Back Button */}
-     <HashLink to="/#project" smooth>
-  <button className="back-btn">← Back to Projects</button>
-</HashLink>
+      <HashLink to="/#project" smooth>
+        <button className="back-btn">← Back to Projects</button>
+      </HashLink>
 
 
       {/* Project Heading */}
-      <h1 className="project-title"><span>ZenAlign</span> – Your Smart Yoga & Wellness Companion</h1>
+      <h1 className="project-title"><span>Student Currency</span> – Learning Financial Discipline</h1>
 
       {/* Content Box */}
       <div className="project-box">
         <p>
-          <strong>ZenAlign</strong> is an AI-powered web platform designed to assist users in improving yoga posture and wellness.
-          Built as part of our academic journey, this project blends real-time pose feedback with personalized health tools.
+          <strong>Student Currency</strong> is a digital financial ecosystem designed exclusively for students, where parents act as financial administrators. It aims to instill budgeting skills, responsible spending, and savings habits through a gamified yet practical approach to money management.
         </p>
 
         <p>
-          <strong>Key Modules:</strong>
+          The concept was pitched during the <strong>Managerial Conquest</strong> organized by <strong>IEEE at Trivandrum</strong>, where it gained positive attention for addressing a relevant real-world need using tech innovation and behavioral design.
+        </p>
+
+        <p>
+          <strong>Core Features:</strong>
           <ul>
-            <li><strong>ZenSense:</strong> Real-time yoga pose correction via webcam using AI (MediaPipe + PoseNet).</li>
-            <li><strong>ZenFit:</strong> Tutorials with clean visuals and step-by-step pose guidance.</li>
-            <li><strong>ZenTracker:</strong> Tracks time spent in each module with daily reset functionality.</li>
-            <li><strong>Wellness Module:</strong> Includes:
-              <ul>
-                <li>Diet Plans: Goal-specific 7-day rotating plans.</li>
-                <li>Meditation: Calming music, motivational clips, and guided sessions.</li>
-                <li>Yoga Practice: Beginner to advanced levels, plus a Kids section.</li>
-                <li>Sun Salutation: Dedicated Surya Namaskar guidance.</li>
-              </ul>
-            </li>
-            <li><strong>ZenBot:</strong> A chatbot offering yoga support and wellness tips.</li>
+            <li>Parent-controlled digital wallets for students</li>
+            <li>Monthly or task-based allowances tied to goals or performance</li>
+            <li>In-app transaction history and visual spending analytics</li>
+            <li>Smart saving challenges and milestone rewards</li>
+            <li>Marketplace simulation for in-campus use or partner stores</li>
           </ul>
         </p>
 
         <p>
-          This journey involved intense collaboration, problem-solving, and late-night hustle. One highlight was integrating the Wellness Module just before the submission, which elevated the project significantly.
+          This project promotes early financial literacy and responsibility while keeping parents in control of how funds are distributed and used. It also opens possibilities for school-based rewards and scholarships to be directly linked to a student's digital currency account.
         </p>
 
-        <p>
-          We proudly presented ZenAlign at our Department Expo and plan to expand it into a mobile app with enhanced personalized features.
-        </p>
-
-        <p className="team-credits">
-          Grateful to my incredible teammates <strong>Joel T John</strong>, <strong>Emily Mariam Shaju</strong>, and <strong>Esther Binu</strong> for their dedication, creativity, and energy throughout this project.
-        </p>
+      
 
         <div className="tools-used">
           <h4>🛠️ Tools Used</h4>
-          <p>HTML, CSS, JavaScript, MediaPipe, PoseNet, PHP, MySQL, XAMPP</p>
+          <p>Figma (for UI/UX design), PowerPoint (pitch deck), Conceptual Mockups (No-code prototype tools)</p>
         </div>
-        
-
       </div>
     </div>
-  );
+
+      );
 };
 
-export default Currency;
+      export default Currency;
