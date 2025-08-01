@@ -161,33 +161,4 @@
     margin-left: 16px;
   }
 
-  .demo-section {
-    padding: 20px 16px;
-    margin: 30px auto 0;
-  }
-
-  .demo-section h2 {
-    font-size: 20px;
-  }
-
-  .demo-section p {
-    font-size: 14px;
-  }
-
-  .demo-btn {
-    padding: 10px 22px;
-    font-size: 14px;
-  }
-
-  .tools-used h4 {
-    font-size: 16px;
-  }
-
-  .tools-used p {
-    font-size: 14px;
-  }
-
-  .team-credits {
-    font-size: 14px;
-  }
 }
