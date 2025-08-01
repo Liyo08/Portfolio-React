@@ -12,6 +12,20 @@ const Project = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+      //to hide the #project
+      const hash = window.location.hash;
+
+  if (hash) {
+    const target = document.getElementById(hash.substring(1));
+    if (target) {
+      // Scroll smoothly
+      target.scrollIntoView({ behavior: 'smooth' });
+
+      // Remove the hash from the address bar
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {

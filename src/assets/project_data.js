@@ -1,7 +1,7 @@
 const Project_data=[
 {
     s_no:"1",
-    s_name:"Zenalign",
+    s_name:"ZenAlign",
     s_desc:"A smart companion website to detect and perfect poses ",
 },
 {
