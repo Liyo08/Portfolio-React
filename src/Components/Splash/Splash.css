@@ -71,7 +71,7 @@
     flex-direction: column;
     justify-content: flex-start; /* Move content to the top */
     align-items: center;
-    padding: 40vh  0; /* Push content downward a bit from top */
+    padding: 30vh  0; /* Push content downward a bit from top */
     height: 100vh;
      /* ensures full viewport height on mobile too */
   }
