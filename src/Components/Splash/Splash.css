@@ -66,12 +66,23 @@
 }
 /* ✅ Mobile Responsiveness */
 @media (max-width: 768px) {
+  .splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    height: 100vh; /* ensures full viewport height on mobile too */
+  }
+
   .splash-text {
     font-size: 2.5rem;
-    align-items: center; /* Smaller font for mobile */
+    margin: 0; /* removes any browser default top/bottom spacing */
   }
 
   .progress-bar-wrapper {
-    width: 80%; /* Responsive width */
+    width: 80%;
+    margin-top: 20px;
   }
 }
