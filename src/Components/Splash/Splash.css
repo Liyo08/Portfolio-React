@@ -67,7 +67,8 @@
 /* ✅ Mobile Responsiveness */
 @media (max-width: 768px) {
   .splash-text {
-    font-size: 2.5rem; /* Smaller font for mobile */
+    font-size: 2.5rem;
+    align-items: center; /* Smaller font for mobile */
   }
 
   .progress-bar-wrapper {
