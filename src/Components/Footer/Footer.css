@@ -6,42 +6,47 @@
 }
 
 .footer-title {
-    position: relative;
-    padding-left: 350px;
+    text-align: center;
 }
 
 .footer-title h1 {
-    padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .footer-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-top-left {
+    flex: 1;
+    min-width: 250px;
 }
 
 .footer-top-left p {
     font-size: 20px;
     max-width: 400px;
-
 }
-
 
 .footer-top-right {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-email-input {
     display: flex;
-    padding: 20px 30px;
-    gap: 30px;
+    align-items: center;
+    padding: 15px 25px;
     border-radius: 50px;
-    padding-right: 80px;
     background: #32323b;
-
+    flex: 1;
+    max-width: 400px;
 }
 
 .footer-email-input input {
@@ -50,24 +55,21 @@
     outline: none;
     color: #a0a0a0;
     font-size: 18px;
-    font-family: Outfit;
+    width: 100%;
 }
 
 .footer-subscribe {
     font-size: 18px;
-    padding: 22px 50px;
+    padding: 15px 40px;
     border-radius: 50px;
     background: linear-gradient(270deg, #00FFB2 -5.09%, #0061FF 106.28%);
-
-    transition: 0.3s;
+    color: white;
     cursor: pointer;
-    ;
+    transition: transform 0.3s;
+    border: none;
 }
 
 .footer-subscribe:hover {
-    background: linear-gradient(270deg, #00FFB2 -5.09%, #0061FF 106.28%);
-
-    transition: 0.3s;
     transform: scale(1.1);
 }
 
@@ -75,12 +77,18 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .footer-bottom-right {
     display: flex;
-    gap: 50px;
-    margin-bottom: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-left {
+    margin-bottom: 10px;
 }
 
 .footer-email-input:hover {
@@ -90,43 +98,49 @@
 @media (max-width: 768px) {
     .footer {
         margin: 50px 20px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
-    .footer-title {
-        font-size: 20px;
-        padding-left: 3px;
+    .footer-title h1 {
+        font-size: 40px;
     }
 
     .footer-top {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
 
     .footer-top-left p {
         text-align: center;
-        font-size: 18px;
-        ;
-        margin-bottom: 10px;
+        font-size: 16px;
     }
 
     .footer-top-right {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .footer-email-input {
-        width: 100%;
-        padding-right: 30px;
+        width: 90%;
+        padding-right: 20px;
     }
 
-    .footer-bottom-right {
-        font-size: 18px;
+    .footer-subscribe {
+        width: 90%;
+        text-align: center;
     }
 
     .footer-bottom {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-bottom-right {
+        gap: 15px;
+        justify-content: center;
     }
 }
