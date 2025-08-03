@@ -14,6 +14,7 @@
   animation: fadeOut 1s ease-in-out forwards;
   animation-delay: 2s;
   gap:10px;
+  text-align: center;
 }
 
 .splash-text {
@@ -61,5 +62,15 @@
   }
   to {
     width: 100%;
+  }
+}
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .splash-text {
+    font-size: 2.5rem; /* Smaller font for mobile */
+  }
+
+  .progress-bar-wrapper {
+    width: 80%; /* Responsive width */
   }
 }
