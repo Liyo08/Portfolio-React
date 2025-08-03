@@ -207,7 +207,9 @@
     }
 
 
-
+.about-skill:hover {
+        transform: scale(1); /* no zoom */
+    }
 
 
     .about-achievements {
