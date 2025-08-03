@@ -12,6 +12,8 @@
     font-size: 90px;
     font-weight: 600;
     margin-top: 0.5em;
+    
+ 
 }
 
 .hero h1 span {
@@ -71,28 +73,35 @@
 
 }
 
+/* Add this (or update your existing media query) */
+
+
 @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 42px;
+    width: 90%;
+  }
 
-    /*.hero img{
-        margin-top:120px;
-        width: 260px;
-        height: auto;
-    }*/
-    .hero h1 {
-        font-size: 50px;
-        width: 90%;
-    }
+  .hero p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 28px;
+  }
 
-    .hero p {
-        width: 90%;
-        font-size: 18px;
-    }
+  .hero-action {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: center;
+  }
 
-    .hero-action {
-        gap: 16px;
-        font-weight: 500;
-        font-size: 15px;
-        margin-bottom: 80px;
-
-    }
+  .hero-connect
+  .hero-resume {
+    width: 80%;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 16px;
+  }
 }
