@@ -69,11 +69,11 @@
   .splash-screen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Move content to the top */
     align-items: center;
-    text-align: center;
+    padding: 40vh  0; /* Push content downward a bit from top */
     height: 100vh;
-    margin-top: 30px; /* ensures full viewport height on mobile too */
+     /* ensures full viewport height on mobile too */
   }
 
   .splash-text {
