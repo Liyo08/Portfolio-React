@@ -1,9 +1,17 @@
 import React from 'react';
 import './Footer.css';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
     return (
-        <div className='footer' id='footer'>
+        <motion.div
+            className='footer'
+            id='footer'
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.4 }}
+        >
             <div className="footer-title">
                 <h1>Subscribe.</h1>
             </div>
@@ -11,7 +19,9 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="footer-top-left">
                     <img src="" alt="" />
-                    <p>I am a frontend developer passionate about transforming ideas into polished digital experiences.<br />Ernakulam, Kerala</p>
+                    <p>
+                        I am a frontend developer passionate about transforming ideas into polished digital experiences.<br />Ernakulam, Kerala
+                    </p>
                 </div>
 
                 <div className="footer-top-right">
@@ -32,7 +42,7 @@ const Footer = () => {
                     <p>Connect with me</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
