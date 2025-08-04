@@ -28,12 +28,12 @@ const Contact = () => {
     }
   };
   return (
-    <div className='contact' id='contact'>
+    <div className='contact' id='contact' data-aos="fade-up">
         <div className="contact-title">
             <h1>Get in touch</h1>
         </div>
         <div className="contact-section">
-            <div className="contact-left">
+            <div className="contact-left" data-aos="fade-right">
                 <h1>Let's Talk</h1>
                 <p>If you have any questions or just want to say hi, feel free to reach out!</p>
               <div className="contact-details">
@@ -58,7 +58,7 @@ const Contact = () => {
   </div>
 </div>
             </div>
-            <form onSubmit={onSubmit} className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right" data-aos="fade-left">
                 <label htmlFor="">Your Name</label>
                 <input type="text" placeholder='Enter your name' name='name' />
                 <label htmlFor="">Your Email</label>

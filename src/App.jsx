@@ -14,6 +14,8 @@ import Dromed from './Components/Dromed/Dromed';
 import Smart from './Components/Smart/Smart';
 import Currency from './Components/Currency/Currency';
 import Splash from './Components/Splash/Splash';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
   const location = useLocation();
@@ -26,6 +28,12 @@ const App = () => {
     }, 4000);
     return () => clearTimeout(timer);
   }, []);
+  useEffect(() => {
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true, // animate only once
+  });
+}, []);
 
   const hideLayoutRoutes = [
     '/projects/agriguru',
