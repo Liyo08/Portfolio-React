@@ -130,6 +130,10 @@
     gap: 10px;
     transition: 0.5s;
 }
+.number-box {
+  min-width: 150px; /* or adjust to fit your longest number like '250+' */
+  text-align: center;
+}
 
 .about-achievement h1 {
     font-size: 60px;
