@@ -2,15 +2,25 @@ import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import './Dromed.css'; // Ensure you have the appropriate CSS file for styling
-import { useEffect } from 'react';
+import { useEffect,useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 
 
 const Dromed = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top when page loads
-  }, []);
+  const backBtnRef = useRef(null); // ✅ Ref for back button
+  
+    useEffect(() => {
+      console.log("✅ Dromed mounted: Scroll to top and focus on Back button");
+  
+      // Scroll to top immediately
+      window.scrollTo({ top: 0, behavior: 'auto' });
+  
+      // Focus the Back button
+      if (backBtnRef.current) {
+        backBtnRef.current.focus();
+      }
+    }, []);
 
 
   const navigate = useNavigate();
@@ -23,8 +33,10 @@ const Dromed = () => {
     <div className="project-detail-container">
       {/* Back Button */}
      <HashLink to="/#project" smooth>
-  <button className="back-btn">← Back to Projects</button>
-</HashLink>
+            <button className="back-btn" ref={backBtnRef}>
+              ← Back to Projects
+            </button>
+          </HashLink>
 
 {/* Project Heading */}
 <h1 className="project-title"><span>Dromed</span> – Healing Fast Through Drone-Powered Delivery</h1>

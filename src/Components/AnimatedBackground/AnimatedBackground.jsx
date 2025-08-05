@@ -22,7 +22,7 @@ const Particles = (props) => {
       <Points ref={ref} positions={particles} stride={3} frustumCulled={false} {...props}>
         <PointMaterial
           transparent
-          color="#6e45e2"
+          color="#ffffffff"
           size={0.005}
           sizeAttenuation={true}
           depthWrite={false}

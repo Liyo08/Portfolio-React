@@ -154,6 +154,11 @@ background: linear-gradient(257deg, #00FFB2 50.41%, #0061FF 90.25%);
   .project-container {
     grid-template-columns: 1fr;
     /* single column on small screens */
+
+  }
+  .project :hover .project-format {
+
+    transform: none;
   }
 
   .project-format {

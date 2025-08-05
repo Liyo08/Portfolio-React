@@ -15,6 +15,7 @@ import Smart from './Components/Smart/Smart';
 import Currency from './Components/Currency/Currency';
 import Splash from './Components/Splash/Splash';
 import AnimatedBackground from './Components/AnimatedBackground/AnimatedBackground';
+import ScrollTop from './Components/ScrollTop';
 
 
 const App = () => {
@@ -32,10 +33,7 @@ const App = () => {
  
 
   // Scroll to top on route change
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
+ 
   // Routes to hide layout
   const hideLayoutRoutes = [
     '/projects/agriguru',
@@ -53,6 +51,7 @@ const App = () => {
   return (
     <>
       <AnimatedBackground />
+      
       {!shouldHideLayout && <Navbar />}
       <Routes>
         <Route
