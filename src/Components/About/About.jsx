@@ -77,12 +77,12 @@ const skills = [
           </div>
           <hr />
           <div className="about-achievement">
-            <div className="number-box"><h1>{startCount ? <CountUp end={40} duration={3} delay={1}/> : 0}+</h1></div>
+            <div className="number-box"><h1>{startCount ? <CountUp end={45} duration={3} delay={1}/> : 0}+</h1></div>
             <p>Repositories</p>
           </div>
           <hr />
           <div className="about-achievement">
-           <div className="number-box"> <h1>{startCount ? <CountUp end={250} duration={3} delay={1}/> : 0}+</h1></div>
+           <div className="number-box"> <h1>{startCount ? <CountUp end={260} duration={3} delay={1}/> : 0}+</h1></div>
             <p>Contributions</p>
           </div>
         </div>
