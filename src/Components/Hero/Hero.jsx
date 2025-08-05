@@ -15,11 +15,19 @@ const Hero = () => {
           I'm a frontend developer with a passion for creating beautiful and functional web applications. I love to learn new technologies and improve my skills.
         </p>
         <div className="hero-action">
-          <div className="hero-connect">
-            <AnchorLink className="anchorlink" offset={50} href="#contact">
-              Connect with Me
-            </AnchorLink>
-          </div>
+       <div className="hero-connect">
+  <a
+    href="#contact"
+    className="anchorlink"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    }}
+  >
+    Connect with Me
+  </a>
+</div>
+
           <a
             href="https://drive.google.com/file/d/1RDuDtwju5IMi5JakOPCCoiFR8zPRX4pP/view?usp=sharing"
             target="_blank"

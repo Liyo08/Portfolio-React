@@ -26,15 +26,73 @@ function Navbar() {
       </div>
 
       <ul className={`navmenu ${isOpen ? 'open' : ''}`}>
-        <li><AnchorLink className='anchorlink' offset={50} href='#home'><p>Home</p></AnchorLink></li>
-        <li><AnchorLink className='anchorlink' offset={50} href='#about'><p>About Me</p></AnchorLink></li>
-        <li><AnchorLink className='anchorlink' offset={50} href='#project'><p>Projects</p></AnchorLink></li>
-        <li><AnchorLink className='anchorlink' offset={50} href='#certificate'><p>Certificate</p></AnchorLink></li>
-        <li><AnchorLink className='anchorlink' offset={50} href='#contact'><p>Contact</p></AnchorLink></li>
+
+
+<li>
+          <p
+            className='anchorlink'
+            onClick={() => {
+              document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+              setIsOpen(false);
+            }}
+          >
+            Home
+          </p>
+        </li><li>
+          <p
+            className='anchorlink'
+            onClick={() => {
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              setIsOpen(false);
+            }}
+          >
+            About Me
+          </p>
+        </li><li>
+          <p
+            className='anchorlink'
+            onClick={() => {
+              document.getElementById('project')?.scrollIntoView({ behavior: 'smooth' });
+              setIsOpen(false);
+            }}
+          >
+            Projects
+          </p>
+        </li>
+        <li>
+          <p
+            className='anchorlink'
+            onClick={() => {
+              document.getElementById('project')?.scrollIntoView({ behavior: 'smooth' });
+              setIsOpen(false);
+            }}
+          >
+            Certificates
+          </p>
+        </li><li>
+          <p
+            className='anchorlink'
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              setIsOpen(false);
+            }}
+          >
+            Contact
+          </p>
+        </li>
+       
       </ul>
 
+
       <div className='nav-connect'>
-        <AnchorLink className='anchorlink' offset={50} href='#contact'>Connect with Me</AnchorLink>
+       <p
+  className='anchorlink'
+  onClick={() => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }}
+>
+  Connect with Me
+</p>
       </div>
     </div>
   );

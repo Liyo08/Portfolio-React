@@ -65,7 +65,8 @@ const Project = () => {
         }
     };
     return (
-        <div className='project' id='project' ref={projectRef}>
+      <div id="project">
+        <div className='project' ref={projectRef}>
             <div className="project-title">
                 <h1>My Projects</h1>
                 <img src="" alt="" />
@@ -93,6 +94,7 @@ const Project = () => {
           );
         })}
       </div>
+    </div>
     </div>
     )
 }

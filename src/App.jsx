@@ -14,28 +14,29 @@ import Dromed from './Components/Dromed/Dromed';
 import Smart from './Components/Smart/Smart';
 import Currency from './Components/Currency/Currency';
 import Splash from './Components/Splash/Splash';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedBackground from './Components/AnimatedBackground/AnimatedBackground';
 
 
 const App = () => {
   const location = useLocation();
   const [showSplash, setShowSplash] = useState(true);
 
+  // Splash screen timeout
   useEffect(() => {
-    
     const timer = setTimeout(() => {
       setShowSplash(false);
     }, 4000);
     return () => clearTimeout(timer);
   }, []);
-  useEffect(() => {
-  AOS.init({
-    duration: 1000, // animation duration in ms
-    once: true, // animate only once
-  });
-}, []);
 
+ 
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  // Routes to hide layout
   const hideLayoutRoutes = [
     '/projects/agriguru',
     '/projects/zenalign',
@@ -51,21 +52,21 @@ const App = () => {
 
   return (
     <>
+      <AnimatedBackground />
       {!shouldHideLayout && <Navbar />}
       <Routes>
-       <Route
-  path="/"
-  element={
-    <div className="fade-in">
-      <Hero />
-      <About />
-      <Project />
-      <Contact />
-      <Footer />
-    </div>
-  }
-/>
-
+        <Route
+          path="/"
+          element={
+            <div className="fade-in">
+              <Hero />
+              <About />
+              <Project />
+              <Contact />
+              <Footer />
+            </div>
+          }
+        />
         <Route path="/projects/agriguru" element={<Agriguru />} />
         <Route path="/projects/zenalign" element={<Zenalign />} />
         <Route path="/projects/alignme" element={<AlignMe />} />

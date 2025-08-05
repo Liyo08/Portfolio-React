@@ -1,19 +1,56 @@
-*{
-  margin:0;
-  padding:0;
-}
-
-body{
-  height:100vh;
-  background:#161513;
-  color: white;
-  font-family: 'outfit', sans-serif;
- 
+* {
   margin: 0;
- 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #161513;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  position: relative;
 
 }
+
+/* Animated Background Layer */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.animated-bg {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* Content Wrapper */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background: rgba(22, 21, 19, 0.466); /* Semi-transparent overlay matching your base color */
+}
+
+
+
+/* Animation Styles */
 .fade-in {
   animation: fadeInUp 1s ease-in-out forwards;
 }
@@ -27,4 +64,24 @@ body{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161513;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e45e2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a35cc;
 }
