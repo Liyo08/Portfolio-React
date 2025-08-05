@@ -33,7 +33,7 @@ const Project = () => {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0.05 }
         );
 
         if (projectRef.current) observer.observe(projectRef.current);

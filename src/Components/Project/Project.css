@@ -162,7 +162,7 @@ background: linear-gradient(257deg, #00FFB2 50.41%, #0061FF 90.25%);
   }
 
   .project-format {
-    padding: 70px;
-    /* adjust padding for smaller screens */
-  }
-}
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }}
