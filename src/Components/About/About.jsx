@@ -58,17 +58,17 @@ const About = () => {
 
         <div className="about-achievements fade-up delay-4">
           <div className="about-achievement">
-            <div className="number-box"><h1>{startCount ? <CountUp end={10} duration={2} delay={1} /> : 0}+</h1></div>
+            <div className="number-box"><h1>{startCount ? <CountUp end={10} duration={3} delay={1} /> : 0}+</h1></div>
             <p>Projects</p>
           </div>
           <hr />
           <div className="about-achievement">
-            <div className="number-box"><h1>{startCount ? <CountUp end={3} duration={2} delay={1} /> : 0}+</h1></div>
+            <div className="number-box"><h1>{startCount ? <CountUp end={3} duration={3} delay={1} /> : 0}+</h1></div>
             <p>Experience</p>
           </div>
           <hr />
           <div className="about-achievement">
-            <div className="number-box"><h1>{startCount ? <CountUp end={40} duration={2.5} delay={1}/> : 0}+</h1></div>
+            <div className="number-box"><h1>{startCount ? <CountUp end={40} duration={3} delay={1}/> : 0}+</h1></div>
             <p>Repositories</p>
           </div>
           <hr />
@@ -83,3 +83,4 @@ const About = () => {
 };
 
 export default About;
+
