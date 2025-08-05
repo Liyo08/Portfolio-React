@@ -136,22 +136,25 @@
 }
 
 .about-achievement h1 {
-  font-size: 60px;
-  font-weight: 700;
-  background: linear-gradient(270deg, #00FFB2, #0061FF, #00FFB2);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientMove 3s ease infinite;
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #00FFB2 50.41%, #0061FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  background-size: 150% 100%;
+  animation: gradientMove 2s ease infinite;
 }
+
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }

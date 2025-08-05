@@ -6,7 +6,6 @@ This is my **personal portfolio website** built using **React** and **Vite**. It
 
 - **React** — JavaScript library for building UI
 - **Vite** — Fast and modern development build tool
-- **Tailwind CSS** — Utility-first CSS framework
 - **React Router** — For navigating between pages
 - **Framer Motion** — For smooth animations
 - **Vercel** — Deployed and hosted with Vercel

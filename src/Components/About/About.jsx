@@ -25,7 +25,16 @@ const About = () => {
 
     return () => observer.disconnect();
   }, []);
-
+const skills = [
+  { name: "HTML, CSS & JS", level: "75%" },
+  { name: "ReactJS", level: "60%" },
+  { name: "C", level: "70%" },
+  { name: "Python", level: "50%" },
+  { name: "DBMS", level: "55%" },
+  { name: ".NET", level: "50%" },
+  { name: "Flutter", level: "25%" },
+  { name: "Figma", level: "40%" }
+];
   return (
     <div className={`about ${visible ? 'about-visible' : ''}`} id="about" ref={aboutRef}>
       <div className="about-title fade-up">
