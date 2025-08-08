@@ -10,9 +10,9 @@ const Hero = () => {
     
       <div className="hero" id="home">
         <img src="" alt="" />
-        <h1><span>Hi, I'm Liyo Tom,</span> Frontend Developer</h1>
+        <h1><span>Hi, I'm Liyo Tom,</span> <br/>Frontend Developer</h1>
         <p>
-          I'm a frontend developer with a passion for creating beautiful and functional web applications. I love to learn new technologies and improve my skills.
+          I'm a frontend developer with a passion for creating beautiful and functional web applications.I enjoy learning new technologies and continuously improving my skills
         </p>
         <div className="hero-action">
        <div className="hero-connect">
@@ -29,7 +29,7 @@ const Hero = () => {
 </div>
 
           <a
-            href="https://drive.google.com/file/d/1RDuDtwju5IMi5JakOPCCoiFR8zPRX4pP/view?usp=sharing"
+            href="https://drive.google.com/file/d/1_bYAdOhMNpQ2ZUFxuEtCApr2y_tBpeO3/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
           >
