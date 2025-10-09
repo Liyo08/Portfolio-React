@@ -54,14 +54,14 @@ const skills = [
           </div>
 
           <div className="about-skills fade-up delay-3">
-            <div className="about-skill"><p>HTML, CSS & JS</p><hr style={{ width: "75%" }} /></div>
-            <div className="about-skill"><p>ReactJS</p><hr style={{ width: "60%" }} /></div>
-            <div className="about-skill"><p>C</p><hr style={{ width: "70%" }} /></div>
-            <div className="about-skill"><p>Python</p><hr style={{ width: "50%" }} /></div>
-            <div className="about-skill"><p>DBMS</p><hr style={{ width: "55%" }} /></div>
-            <div className="about-skill"><p>.NET</p><hr style={{ width: "50%" }} /></div>
-            <div className="about-skill"><p>Flutter</p><hr style={{ width: "25%" }} /></div>
+            <div className="about-skill"><p>C</p><hr style={{ width: "75%" }} /></div>
+            <div className="about-skill"><p>HTML, CSS & JS</p><hr style={{ width: "60%" }} /></div>
+            <div className="about-skill"><p>ReactJS</p><hr style={{ width: "45%" }} /></div>
+            <div className="about-skill"><p>SQL</p><hr style={{ width: "40%" }} /></div>
+            <div className="about-skill"><p>.NET</p><hr style={{ width: "35%" }} /></div>
+            <div className="about-skill"><p>Flutter</p><hr style={{ width: "50%" }} /></div>
             <div className="about-skill"><p>Figma</p><hr style={{ width: "40%" }} /></div>
+            <div className="about-skill"><p>Python</p><hr style={{ width: "20%" }} /></div>
           </div>
         </div>
 
