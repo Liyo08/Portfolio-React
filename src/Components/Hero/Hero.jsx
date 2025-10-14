@@ -29,7 +29,7 @@ const Hero = () => {
 </div>
 
           <a
-            href="https://drive.google.com/file/d/1_bYAdOhMNpQ2ZUFxuEtCApr2y_tBpeO3/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/14e7bygotwHa7oRutbKDoeNRRxDYde4Z6/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
           >
